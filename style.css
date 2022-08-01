@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-radius: 4px;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #dbdbdb;
+    padding: 20px;
+    border-radius: 6px;
+}
+.header {
+    background: #4bbff3;
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--main-radius);
+    padding: 10px;
+    height: 70px;
+}
+.header a img {
+    width: 50px;
+}
+.header input {
+    flex: 1;
+    padding: 0px 25px;
+    border: none;
+    border-radius: var(--main-radius);
+    font-size: 18px;
+    margin: 0 20px;
+    background: #f3f3f385;
+    transition: 0.2s;
+}
+.header input:hover {
+    background: white;
+}
+.header input:focus {
+    outline: none;
+    background: white;
+}
+.header span {
+    font-size: 14px;
+    padding: 18px 20px;
+    background: #e5d973;
+    border-radius: var(--main-radius);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.header span:hover {
+    background: #ffeb3b;
+}
+.data {
+    padding: 20px;
+    border-radius: var(--main-radius);
+    background: black;
+    color: #ff5252;
+    margin-top: 20px;
+}
+.link {
+    text-decoration: none;
+}
+.link .capsola {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+    background-color: #222222;
+    border-radius: var(--main-radius);
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.link .capsola span:last-child {
+    height: 15px;
+}
+.link .capsola .star {
+    width: 13px;
+    margin-left: 5px;
+}
+.link .capsola:hover {
+    background-color: #363636;
+}
